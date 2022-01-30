@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <title>Gerador de URL</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-between mt-4">
+            <div class="col-4 text-center">
+                <div class="form-group">
+                    <label for="txtURL" class="font-weight-bold">Digite a URL do Site</label>
+                    <input type="text" class="form-control" id="txtURL" placeholder="https://turnheron.altips.me/">
+                </div>
+            </div>
+
+            <div class="col-7 text-center">
+                <div class="form-group">
+                    <label for="txtLista" class="font-weight-bold">Digite as palavras-chave</label>
+                    <textarea class="form-control" id="txtLista" rows="10"></textarea>
+                </div>
+                <button class="btn btn-secondary" id="btnGerar">Gerar</button>
+            </div>
+        </div>
+
+        <div class="row mt-2 mb-4">
+            <div class="col-12 text-left">
+                <div class="form-group">
+                    <label for="txtResult" class="font-weight-bold">URL's Gerados</label>
+                    <textarea class="form-control" id="txtResult" rows="10"></textarea>
+                </div>
+                <button class="btn btn-secondary" id="btnCopiar">Copiar</button>
+            </div>
+        </div>
+
+    </div>    
+</body>
+</html>
