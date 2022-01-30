@@ -35,4 +35,14 @@ $(() => {
         .then(() => alert("Testo Copiado"))
         .catch( () => alert(("Falha ao copiar o Texto")))
     })
+
+    $("#btnDelUrl").on("click", () => {
+        url.val("")
+    })
+
+    $("#btnDelAll").on("click", () => {
+        url.val("")
+        keyList.val("")
+        result.val("")
+    })
 })
